@@ -1,0 +1,28 @@
+.nav-link {
+    &.disabled {
+        opacity: 0.25;
+    }
+}
+
+section,
+footer {
+    .nav-link {
+        transition: opacity 0.2s linear;
+        &:not(.active) {
+            &:not(.disabled) {
+                &:not(:hover) {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    &:not(.text-light) {
+        .nav-link {
+            color: theme-color('dark');
+        }
+    }
+}
+
+footer {
+    padding: 6rem 0;
+}

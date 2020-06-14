@@ -1,0 +1,27 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import './bootstrap-overrides.scss';
+@import './typography.scss';
+@import './navs.scss';
+@import './hero.scss';
+@import './articles.scss';
+
+section {
+    padding: 6rem 0;
+}
+
+img,
+video {
+    width: 100%;
+    height: auto;
+}
+
+.g-project-cards {
+    img {
+        transition: transform 0.2s ease-in-out;
+    }
+    &:hover {
+        img {
+            transform: scale(1.04);
+        }
+    }
+}

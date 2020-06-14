@@ -1,0 +1,16 @@
+img.g-hero {
+    width: 100%;
+    padding: 1rem;
+}
+
+@include media-breakpoint-down(lg) {
+    img.g-hero {
+        // padding: 3rem;
+    }
+}
+
+@include media-breakpoint-down(md) {
+}
+
+@include media-breakpoint-down(sm) {
+}

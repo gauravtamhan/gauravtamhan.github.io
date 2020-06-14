@@ -5,6 +5,27 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
-}
+    /* Your site config here */
+    siteMetadata: {
+        projectLinks: [
+            {
+                name: 'House ATL Data Collective',
+                link: '/house-atl',
+                description:
+                    'A geo-vis application that analyzes affordable housing in Atlanta',
+            },
+            {
+                name: 'Working at Fitspot',
+                link: '/fitspot',
+                description:
+                    'A look into my experience as a frontend developer at Fitspot, a fitness tech startup',
+            },
+        ],
+        socialLinks: {
+            email: 'gaurav.tamhan@gmail.com',
+            linkedin: 'https://www.linkedin.com/in/gauravtamhan/',
+            github: 'https://github.com/gauravtamhan',
+        },
+    },
+    plugins: ['gatsby-plugin-sass', 'gatsby-plugin-fontawesome-css'],
+};
