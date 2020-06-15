@@ -7,6 +7,16 @@
 module.exports = {
     /* Your site config here */
     siteMetadata: {
+        navLinks: [
+            {
+                label: 'Portfolio',
+                location: '/',
+            },
+            {
+                label: 'About',
+                location: '/about',
+            },
+        ],
         projectLinks: [
             {
                 name: 'House ATL Data Collective',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import Fitspot from '../images/projectCards/fitspot-2.png';
-import HouseATL from '../images/projectCards/house-atl.png';
+import Fitspot from '../assets/projectCards/fitspot-2.png';
+import HouseATL from '../assets/projectCards/house-atl.png';
 
 const IMG_MAP = {
     0: HouseATL,

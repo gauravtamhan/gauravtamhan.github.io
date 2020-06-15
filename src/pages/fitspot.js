@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import Layout from '../components/layout';
 import ProjectCards from '../components/projectCards';
-import Footer from '../components/footer';
 import ProjectDetails from '../components/projectDetails';
-import HeroImage from '../images/fitspot/image-1.png';
-import Video1 from '../images/fitspot/side-menu.mp4';
-import Video2 from '../images/fitspot/theme.mp4';
-import Video3 from '../images/fitspot/tiles.mp4';
-import Video4 from '../images/fitspot/trainer-app.mp4';
+import HeroImage from '../assets/fitspot/image-1.png';
+import Video1 from '../assets/fitspot/side-menu.mp4';
+import Video2 from '../assets/fitspot/theme.mp4';
+import Video3 from '../assets/fitspot/tiles.mp4';
+import Video4 from '../assets/fitspot/trainer-app.mp4';
 
 const quickRow = [
     {
@@ -21,7 +21,7 @@ const quickRow = [
 
 function Fitspot(props) {
     return (
-        <Fragment>
+        <Layout>
             <section className="bg-primary-2 text-light">
                 <div className="container">
                     <div className="row justify-content-center text-center mb-6">
@@ -199,8 +199,7 @@ function Fitspot(props) {
                     <ProjectCards uri={props.uri} />
                 </div>
             </section>
-            <Footer />
-        </Fragment>
+        </Layout>
     );
 }
 

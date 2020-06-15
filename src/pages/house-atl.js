@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import Layout from '../components/layout';
 import ProjectCards from '../components/projectCards';
-import Footer from '../components/footer';
 import ProjectDetails from '../components/projectDetails';
-import HeroImage from '../images/houseATL/image-1.png';
-import Image2 from '../images/houseATL/image-2.png';
-import Image3 from '../images/houseATL/image-3.png';
-import Image4 from '../images/houseATL/image-4.png';
+import HeroImage from '../assets/houseATL/image-1.png';
+import Image2 from '../assets/houseATL/image-2.png';
+import Image3 from '../assets/houseATL/image-3.png';
+import Image4 from '../assets/houseATL/image-4.png';
 
 const liveLink = 'http://geospatial.gatech.edu/HOUSEATL/#/';
 
@@ -27,7 +27,7 @@ const quickRow = [
 
 function HouseATL(props) {
     return (
-        <Fragment>
+        <Layout>
             <section className="bg-primary-2 text-light">
                 <div className="container">
                     <div className="row justify-content-center text-center mb-6">
@@ -172,8 +172,7 @@ function HouseATL(props) {
                     <ProjectCards uri={props.uri} />
                 </div>
             </section>
-            <Footer />
-        </Fragment>
+        </Layout>
     );
 }
 

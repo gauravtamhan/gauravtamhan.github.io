@@ -2,6 +2,7 @@
 @import './bootstrap-overrides.scss';
 @import './typography.scss';
 @import './navs.scss';
+@import './navbar.scss';
 @import './hero.scss';
 @import './articles.scss';
 
@@ -24,4 +25,8 @@ video {
             transform: scale(1.04);
         }
     }
+}
+
+.full-height {
+    height: calc(100vh - 70px);
 }

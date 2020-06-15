@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
-import Footer from '../components/footer';
+import React from 'react';
+import Layout from '../components/layout';
 import ProjectCards from '../components/projectCards';
-import HeroImage from '../images/hero.png';
+import HeroImage from '../assets/hero.png';
 
 function Home() {
     return (
-        <Fragment>
+        <Layout>
             <section className="bg-primary-2 text-light">
                 <div className="container">
                     <div className="row">
@@ -42,8 +42,7 @@ function Home() {
                     <ProjectCards />
                 </div>
             </section>
-            <Footer />
-        </Fragment>
+        </Layout>
     );
 }
 
