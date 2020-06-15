@@ -52,8 +52,11 @@ function Footer() {
                             </p>
                         </div>
                         <div className="my-5">
-                            <a href="#" className="btn btn-lg btn-primary">
-                                Get In Touch
+                            <a
+                                href={`mailto:${email}`}
+                                className="btn btn-lg btn-primary"
+                            >
+                                {email}
                             </a>
                         </div>
                     </div>
@@ -66,6 +69,7 @@ function Footer() {
                                     <a
                                         href={x.link}
                                         target="_blank"
+                                        rel="noreferrer"
                                         className="nav-link"
                                     >
                                         <FontAwesomeIcon

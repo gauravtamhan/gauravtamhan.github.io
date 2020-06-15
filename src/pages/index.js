@@ -11,7 +11,11 @@ function Home() {
                     <div className="row">
                         <div className="col-8 offset-2 col-sm-6 offset-sm-3 order-lg-2 col-lg-4 offset-lg-0">
                             <div className="mb-4">
-                                <img className="g-hero" src={HeroImage} />
+                                <img
+                                    className="g-hero"
+                                    alt=""
+                                    src={HeroImage}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-8 d-flex align-items-center text-center text-lg-left">

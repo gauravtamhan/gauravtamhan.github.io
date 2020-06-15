@@ -1,10 +1,29 @@
 import React, { Fragment } from 'react';
 import ProjectCards from '../components/projectCards';
 import Footer from '../components/footer';
+import ProjectDetails from '../components/projectDetails';
 import HeroImage from '../images/houseATL/image-1.png';
 import Image2 from '../images/houseATL/image-2.png';
 import Image3 from '../images/houseATL/image-3.png';
 import Image4 from '../images/houseATL/image-4.png';
+
+const liveLink = 'http://geospatial.gatech.edu/HOUSEATL/#/';
+
+const quickRow = [
+    {
+        heading: 'Role',
+        body: 'Frontend Developer',
+    },
+    {
+        heading: 'Duration',
+        body: '4 months',
+    },
+    {
+        heading: 'Live',
+        body: 'Visit Website',
+        link: liveLink,
+    },
+];
 
 function HouseATL(props) {
     return (
@@ -13,7 +32,7 @@ function HouseATL(props) {
                 <div className="container">
                     <div className="row justify-content-center text-center mb-6">
                         <div className="col-xl-8 col-lg-9 col-md-10">
-                            <h5 className="mb-4">Frontend Development</h5>
+                            <h5 className="mb-4">Data Visualization</h5>
                             <h1 className="display-4 mb-4">
                                 House ATL Data Collective
                             </h1>
@@ -33,6 +52,7 @@ function HouseATL(props) {
                     </div>
                 </div>
             </section>
+            <ProjectDetails data={quickRow} />
             <section className="pt-4">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -74,14 +94,14 @@ function HouseATL(props) {
                                 <figure>
                                     <img
                                         src={Image2}
-                                        alt="Image"
+                                        alt=""
                                         className="rounded"
                                     />
                                 </figure>
                                 <figure>
                                     <img
                                         src={Image3}
-                                        alt="Image"
+                                        alt=""
                                         className="rounded"
                                     />
                                 </figure>
@@ -111,7 +131,7 @@ function HouseATL(props) {
                                 <figure className="mt-3 inline-figure">
                                     <img
                                         src={Image4}
-                                        alt="Image"
+                                        alt=""
                                         className="rounded"
                                     />
                                 </figure>

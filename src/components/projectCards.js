@@ -36,6 +36,7 @@ function ProjectCards({ uri }) {
                             <Link className="g-project-cards" to={project.link}>
                                 <img
                                     className="rounded mb-3"
+                                    alt=""
                                     src={IMG_MAP[index]}
                                 />
                                 <h4 className="mb-1">{project.name}</h4>

@@ -1,11 +1,23 @@
 import React, { Fragment } from 'react';
 import ProjectCards from '../components/projectCards';
 import Footer from '../components/footer';
+import ProjectDetails from '../components/projectDetails';
 import HeroImage from '../images/fitspot/image-1.png';
 import Video1 from '../images/fitspot/side-menu.mp4';
 import Video2 from '../images/fitspot/theme.mp4';
 import Video3 from '../images/fitspot/tiles.mp4';
 import Video4 from '../images/fitspot/trainer-app.mp4';
+
+const quickRow = [
+    {
+        heading: 'Role',
+        body: 'Frontend Developer',
+    },
+    {
+        heading: 'Duration',
+        body: '14 months',
+    },
+];
 
 function Fitspot(props) {
     return (
@@ -35,6 +47,7 @@ function Fitspot(props) {
                     </div>
                 </div>
             </section>
+            <ProjectDetails data={quickRow} />
             <section className="pt-4">
                 <div className="container">
                     <div className="row justify-content-center">
