@@ -19,7 +19,7 @@ function ProjectDetails({ data }) {
                                             rel="noreferrer"
                                             target="_blank"
                                         >
-                                            View Website
+                                            {item.body}
                                         </a>
                                     ) : (
                                         <p className="mb-0">{item.body}</p>

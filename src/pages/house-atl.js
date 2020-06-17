@@ -20,14 +20,14 @@ const quickRow = [
     },
     {
         heading: 'Live',
-        body: 'Visit Website',
+        body: 'Visit Webapp',
         link: liveLink,
     },
 ];
 
 function HouseATL(props) {
     return (
-        <Layout>
+        <Layout scrollTopBtn>
             <section className="bg-primary-2 text-light">
                 <div className="container">
                     <div className="row justify-content-center text-center mb-6">
@@ -39,9 +39,9 @@ function HouseATL(props) {
                             <p className="lead">
                                 As part of my Graduate Research Assistantship
                                 through Georgia Tech, I had the opportunity to
-                                work on this project and build the public-facing
-                                web portal that organizes and visualizes the
-                                data.
+                                build the public-facing web portal that
+                                organizes and visualizes data on subsidized
+                                housing in metro Atlanta for House ATL.
                             </p>
                         </div>
                     </div>

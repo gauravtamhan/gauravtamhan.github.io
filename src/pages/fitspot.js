@@ -21,7 +21,7 @@ const quickRow = [
 
 function Fitspot(props) {
     return (
-        <Layout>
+        <Layout scrollTopBtn>
             <section className="bg-primary-2 text-light">
                 <div className="container">
                     <div className="row justify-content-center text-center mb-6">
