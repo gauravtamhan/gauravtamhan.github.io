@@ -4,7 +4,21 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Resume from '../assets/resume/gaurav_tamhan_resume_2020_updated.pdf';
+
+function ResumeNavItem({ mobile }) {
+    return (
+        <OutboundLink
+            className={`nav-link ${mobile ? 'h2' : ''}`}
+            href={Resume}
+            target="_blank"
+            rel="noreferrer"
+        >
+            Resume
+        </OutboundLink>
+    );
+}
 
 const STAGGER_DELAY = 80;
 
@@ -97,12 +111,6 @@ function Navbar() {
 
     const { navLinks } = queryData.site.siteMetadata;
 
-    const ResumeNavItem = (
-        <a className="nav-link" href={Resume} target="_blank" rel="noreferrer">
-            Resume
-        </a>
-    );
-
     const { email, github, linkedin } = queryData.site.siteMetadata.socialLinks;
 
     const socialData = [
@@ -160,7 +168,7 @@ function Navbar() {
                                             </Link>
                                         </li>
                                     ))}
-                                    {ResumeNavItem}
+                                    <ResumeNavItem />
                                 </ul>
                             </div>
                         </div>
@@ -192,14 +200,7 @@ function Navbar() {
                                     index={navLinks.length}
                                     className="nav-item"
                                 >
-                                    <a
-                                        className="nav-link h2"
-                                        href={Resume}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        Resume
-                                    </a>
+                                    <ResumeNavItem mobile />
                                 </MobileNavListItem>
                             </ul>
                         </NavItemContainer>
@@ -208,16 +209,16 @@ function Navbar() {
                             index={navLinks.length + 1}
                             className="d-flex flex-column align-items-center text-light mb-3 g-mobile-menu-footer"
                         >
-                            <a
+                            <OutboundLink
                                 href={`mailto:${email}`}
                                 className="btn btn-lg btn-block btn-primary mb-3"
                             >
                                 {email}
-                            </a>
+                            </OutboundLink>
                             <ul className="nav">
                                 {socialData.map((x, i) => (
                                     <li key={i} className="nav-item">
-                                        <a
+                                        <OutboundLink
                                             href={x.link}
                                             target="_blank"
                                             rel="noreferrer"
@@ -228,7 +229,7 @@ function Navbar() {
                                                 size="lg"
                                                 fixedWidth
                                             />
-                                        </a>
+                                        </OutboundLink>
                                     </li>
                                 ))}
                             </ul>

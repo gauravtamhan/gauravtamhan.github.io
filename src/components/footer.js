@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 function Footer() {
     const queryData = useStaticQuery(
@@ -52,12 +53,12 @@ function Footer() {
                             </p>
                         </div>
                         <div className="my-5">
-                            <a
+                            <OutboundLink
                                 href={`mailto:${email}`}
                                 className="btn btn-lg btn-primary"
                             >
                                 {email}
-                            </a>
+                            </OutboundLink>
                         </div>
                     </div>
                 </div>
@@ -66,7 +67,7 @@ function Footer() {
                         <ul className="nav">
                             {data.map((x, i) => (
                                 <li key={i} className="nav-item">
-                                    <a
+                                    <OutboundLink
                                         href={x.link}
                                         target="_blank"
                                         rel="noreferrer"
@@ -77,7 +78,7 @@ function Footer() {
                                             size="lg"
                                             fixedWidth
                                         />
-                                    </a>
+                                    </OutboundLink>
                                 </li>
                             ))}
                         </ul>

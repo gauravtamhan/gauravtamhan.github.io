@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 function ProjectDetails({ data }) {
     return (
@@ -14,13 +15,13 @@ function ProjectDetails({ data }) {
                                 >
                                     <h6 className="mb-1">{item.heading}</h6>
                                     {item['link'] ? (
-                                        <a
+                                        <OutboundLink
                                             href={item.link}
                                             rel="noreferrer"
                                             target="_blank"
                                         >
                                             {item.body}
-                                        </a>
+                                        </OutboundLink>
                                     ) : (
                                         <p className="mb-0">{item.body}</p>
                                     )}

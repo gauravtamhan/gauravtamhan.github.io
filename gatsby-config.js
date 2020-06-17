@@ -38,6 +38,13 @@ module.exports = {
         },
     },
     plugins: [
+        {
+            resolve: 'gatsby-plugin-google-analytics',
+            options: {
+                trackingId: 'UA-117316278-2',
+                head: true,
+            },
+        },
         'gatsby-plugin-sass',
         'gatsby-plugin-fontawesome-css',
         'gatsby-plugin-styled-components',
