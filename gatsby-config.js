@@ -37,5 +37,9 @@ module.exports = {
             github: 'https://github.com/gauravtamhan',
         },
     },
-    plugins: ['gatsby-plugin-sass', 'gatsby-plugin-fontawesome-css'],
+    plugins: [
+        'gatsby-plugin-sass',
+        'gatsby-plugin-fontawesome-css',
+        'gatsby-plugin-styled-components',
+    ],
 };

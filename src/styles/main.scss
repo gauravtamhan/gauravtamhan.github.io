@@ -30,3 +30,9 @@ video {
 .full-height {
     height: calc(100vh - 70px);
 }
+
+body.scroll-disabled {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

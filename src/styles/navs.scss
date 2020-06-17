@@ -5,7 +5,8 @@
 }
 
 section,
-footer {
+footer,
+.g-mobile-menu-footer {
     .nav-link {
         transition: opacity 0.2s linear;
         &:not(.active) {

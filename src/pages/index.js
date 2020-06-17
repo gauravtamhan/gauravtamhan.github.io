@@ -6,7 +6,7 @@ import HeroImage from '../assets/hero.png';
 function Home() {
     return (
         <Layout>
-            <section className="bg-primary-2 text-light">
+            <section className="bg-primary-2 text-light pt-3 pt-sm-5 pt-md-7">
                 <div className="container">
                     <div className="row">
                         <div className="col-8 offset-2 col-sm-6 offset-sm-3 order-lg-2 col-lg-4 offset-lg-0">
