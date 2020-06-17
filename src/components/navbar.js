@@ -132,11 +132,20 @@ function Navbar() {
                             Gaurav Tamhan
                         </Link>
                         <button
-                            className="navbar-toggler"
-                            type="button"
-                            onClick={() => setMenuOpen(prevState => !prevState)}
+                            className={`mobile-hamburger-button navbar-toggler ${
+                                menuOpen
+                                    ? 'mobile-hamburger-button--active'
+                                    : ''
+                            }`}
+                            onClick={() => {
+                                setMenuOpen(prevState => !prevState);
+                            }}
                         >
-                            <span className="navbar-toggler-icon"></span>
+                            <div className="hamburger-icon icon">
+                                <span className="line line-1"></span>
+                                <span className="line line-2"></span>
+                                <span className="line line-3"></span>
+                            </div>
                         </button>
                         <div className="navbar-collapse justify-content-end collapse">
                             <div className="py-2 py-md-0">

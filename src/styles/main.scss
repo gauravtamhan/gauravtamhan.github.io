@@ -36,3 +36,71 @@ body.scroll-disabled {
     height: 100%;
     overflow: hidden;
 }
+
+// Hamburger Icon
+
+.mobile-hamburger-button {
+    width: 40px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: -10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transform: none;
+    cursor: pointer;
+
+    .hamburger-icon {
+        position: absolute;
+        top: 13px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .line {
+        width: 20px;
+        height: 2px;
+        border-radius: 10px;
+        transition: 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transform: none;
+        position: absolute;
+        background-color: white;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .line-2 {
+        margin-top: 6px;
+    }
+
+    .line-3 {
+        margin-top: 12px;
+    }
+
+    &.mobile-hamburger-button--active {
+        transform: rotate(90deg);
+
+        .line-1 {
+            transform: rotate(45deg);
+            margin-top: 6px;
+        }
+
+        .line-2 {
+            width: 0;
+        }
+
+        .line-3 {
+            transform: rotate(-45deg);
+            margin-top: 6px;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
