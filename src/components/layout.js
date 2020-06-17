@@ -1,15 +1,19 @@
 import React, { Fragment } from 'react';
+import { Helmet } from 'react-helmet';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import ScrollTopBtn from '../components/scrollTopBtn';
 
-function Layout(props) {
+function Layout({ pageTitle, children, noFooter, scrollTopBtn }) {
     return (
         <Fragment>
+            <Helmet>
+                <title>{`Gaurav Tamhan - ${pageTitle}`}</title>
+            </Helmet>
             <Navbar />
-            {props.children}
-            {!props.noFooter && <Footer />}
-            {props.scrollTopBtn && <ScrollTopBtn />}
+            {children}
+            {!noFooter && <Footer />}
+            {scrollTopBtn && <ScrollTopBtn />}
         </Fragment>
     );
 }

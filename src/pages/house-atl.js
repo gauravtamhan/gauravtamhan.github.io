@@ -7,6 +7,7 @@ import Image2 from '../assets/houseATL/image-2.png';
 import Image3 from '../assets/houseATL/image-3.png';
 import Image4 from '../assets/houseATL/image-4.png';
 
+const pageTitle = 'House ATL Data Collective';
 const liveLink = 'http://geospatial.gatech.edu/HOUSEATL/#/';
 
 const quickRow = [
@@ -27,15 +28,13 @@ const quickRow = [
 
 function HouseATL(props) {
     return (
-        <Layout scrollTopBtn>
+        <Layout scrollTopBtn pageTitle={pageTitle}>
             <section className="bg-primary-2 text-light">
                 <div className="container">
                     <div className="row justify-content-center text-center mb-6">
                         <div className="col-xl-8 col-lg-9 col-md-10">
                             <h5 className="mb-4">Data Visualization</h5>
-                            <h1 className="display-4 mb-4">
-                                House ATL Data Collective
-                            </h1>
+                            <h1 className="display-4 mb-4">{pageTitle}</h1>
                             <p className="lead">
                                 As part of my Graduate Research Assistantship
                                 through Georgia Tech, I had the opportunity to

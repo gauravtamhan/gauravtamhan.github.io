@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 
 export default function About() {
     return (
-        <Layout>
+        <Layout pageTitle="About">
             <section>
                 <div className="container">
                     <div className="row justify-content-center text-center mb-6">

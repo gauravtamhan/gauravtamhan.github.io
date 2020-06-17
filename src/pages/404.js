@@ -3,11 +3,11 @@ import Layout from '../components/layout';
 
 function NotFound() {
     return (
-        <Layout noFooter>
+        <Layout pageTitle="Page Not Found" noFooter>
             <div className="bg-primary-2 full-height">
                 <section className="bg-primary-2 text-light">
                     <div className="container">
-                        <div className="row justify-content-center">
+                        <div className="row">
                             <div className="col-lg-10">
                                 <h1 className="display-3">Page not found</h1>
                                 <div className="my-4">
@@ -19,7 +19,7 @@ function NotFound() {
                                     </p>
                                 </div>
                                 <button
-                                    className="btn btn-primary"
+                                    className="btn btn-lg btn-primary"
                                     onClick={() => {
                                         window.history.back();
                                     }}

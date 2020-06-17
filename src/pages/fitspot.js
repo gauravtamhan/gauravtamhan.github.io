@@ -8,6 +8,8 @@ import Video2 from '../assets/fitspot/theme.mp4';
 import Video3 from '../assets/fitspot/tiles.mp4';
 import Video4 from '../assets/fitspot/trainer-app.mp4';
 
+const pageTitle = 'Working at Fitspot';
+
 const quickRow = [
     {
         heading: 'Role',
@@ -21,15 +23,13 @@ const quickRow = [
 
 function Fitspot(props) {
     return (
-        <Layout scrollTopBtn>
+        <Layout scrollTopBtn pageTitle={pageTitle}>
             <section className="bg-primary-2 text-light">
                 <div className="container">
                     <div className="row justify-content-center text-center mb-6">
                         <div className="col-xl-8 col-lg-9 col-md-10">
                             <h5 className="mb-4">Frontend Development</h5>
-                            <h1 className="display-4 mb-4">
-                                Working at Fitspot
-                            </h1>
+                            <h1 className="display-4 mb-4">{pageTitle}</h1>
                             <p className="lead">
                                 In the summer of 2018 I started working at
                                 Fitspot, a fitness-focused company that promotes

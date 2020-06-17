@@ -42,5 +42,18 @@ module.exports = {
         'gatsby-plugin-fontawesome-css',
         'gatsby-plugin-styled-components',
         'gatsby-plugin-smoothscroll',
+        'gatsby-plugin-react-helmet',
+        {
+            resolve: 'gatsby-plugin-manifest',
+            options: {
+                name: 'Gaurav Tamhan',
+                short_name: 'Gaurav',
+                start_url: '/',
+                background_color: '#1b1f3b',
+                theme_color: '#1b1f3b',
+                display: 'standalone',
+                icon: 'src/assets/icon.png',
+            },
+        },
     ],
 };

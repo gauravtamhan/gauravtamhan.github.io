@@ -6,7 +6,7 @@ import HeroImage from '../assets/hero.png';
 
 function Home() {
     return (
-        <Layout>
+        <Layout pageTitle="Frontend Developer">
             <section className="bg-primary-2 text-light pt-3 pt-sm-5 pt-md-7">
                 <div className="container">
                     <div className="row">
