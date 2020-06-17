@@ -147,7 +147,7 @@ function Navbar() {
                                 <span className="line line-3"></span>
                             </div>
                         </button>
-                        <div className="navbar-collapse justify-content-end collapse">
+                        <div className="navbar-collapse justify-content-end collapse overflow-hidden">
                             <div className="py-2 py-md-0">
                                 <ul className="navbar-nav">
                                     {navLinks.map((item, index) => (
