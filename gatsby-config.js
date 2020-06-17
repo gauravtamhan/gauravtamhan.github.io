@@ -41,5 +41,6 @@ module.exports = {
         'gatsby-plugin-sass',
         'gatsby-plugin-fontawesome-css',
         'gatsby-plugin-styled-components',
+        'gatsby-plugin-smoothscroll',
     ],
 };

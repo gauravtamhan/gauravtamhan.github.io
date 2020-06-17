@@ -1,4 +1,5 @@
 import React from 'react';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import Layout from '../components/layout';
 import ProjectCards from '../components/projectCards';
 import HeroImage from '../assets/hero.png';
@@ -30,14 +31,17 @@ function Home() {
                     </div>
                     <div className="row mt-3 mt-lg-0">
                         <div className="col text-center text-lg-left">
-                            <button className="btn btn-lg btn-primary">
+                            <button
+                                className="btn btn-lg btn-primary"
+                                onClick={() => scrollTo('#projects')}
+                            >
                                 Get Started
                             </button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="bg-primary-2 text-light">
+            <section id="projects" className="bg-primary-2 text-light">
                 <div className="container">
                     <ProjectCards />
                 </div>
