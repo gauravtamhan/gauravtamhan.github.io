@@ -2,10 +2,12 @@ import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Fitspot from '../assets/projectCards/fitspot-2.png';
 import HouseATL from '../assets/projectCards/house-atl.png';
+import HomeDepot from '../assets/projectCards/home-depot.png';
 
 const IMG_MAP = {
     0: HouseATL,
     1: Fitspot,
+    2: HomeDepot,
 };
 
 function ProjectCards({ uri }) {

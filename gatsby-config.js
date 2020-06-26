@@ -30,6 +30,12 @@ module.exports = {
                 description:
                     'A look into my experience as a frontend developer at Fitspot, a fitness tech startup',
             },
+            {
+                name: 'Home Depot UX Design',
+                link: '/home-depot',
+                description:
+                    'Redesigning the First Phone in collaboration with The Home Depot Store Ops team',
+            },
         ],
         socialLinks: {
             email: 'gaurav.tamhan@gmail.com',
