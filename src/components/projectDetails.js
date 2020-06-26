@@ -14,7 +14,7 @@ function ProjectDetails({ data }) {
                                     className="flex-md-fill my-2 my-md-3 text-left text-md-center"
                                 >
                                     <h6 className="mb-1">{item.heading}</h6>
-                                    {item['link'] ? (
+                                    {item['link'] && (
                                         <OutboundLink
                                             href={item.link}
                                             rel="noreferrer"
@@ -22,7 +22,16 @@ function ProjectDetails({ data }) {
                                         >
                                             {item.body}
                                         </OutboundLink>
-                                    ) : (
+                                    )}
+                                    {item['btnClick'] && (
+                                        <button
+                                            className="btn btn-link"
+                                            onClick={item.btnClick}
+                                        >
+                                            {item.body}
+                                        </button>
+                                    )}
+                                    {!item['link'] && !item['btnClick'] && (
                                         <p className="mb-0">{item.body}</p>
                                     )}
                                 </div>

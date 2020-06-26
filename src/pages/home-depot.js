@@ -1,4 +1,6 @@
 import React from 'react';
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Layout from '../components/layout';
 import ProjectCards from '../components/projectCards';
 import ProjectDetails from '../components/projectDetails';
@@ -11,8 +13,10 @@ import Design1 from '../assets/homeDepot/design-1.png';
 import Design2 from '../assets/homeDepot/design-2.png';
 import Design3 from '../assets/homeDepot/design-3.png';
 import IA from '../assets/homeDepot/ia.png';
+import Prototype from '../assets/homeDepot/prototype.png';
 
 const pageTitle = 'Home Depot UX Design';
+const prototypeLink = 'https://invis.io/C4Q6X7OFSBZ#/335360129_Login';
 
 const quickRow = [
     {
@@ -26,6 +30,9 @@ const quickRow = [
     {
         heading: 'Deliverable',
         body: 'Interactive Prototype',
+        btnClick: function () {
+            return scrollTo('#prototype');
+        },
     },
 ];
 
@@ -261,7 +268,7 @@ function HomeDepot(props) {
                                     usability testing session we were further
                                     able to iterate on our system design
                                 </p>
-                                <h5>The Design</h5>
+                                <h5 id="prototype">The Design</h5>
                                 <p>
                                     Below is interactive demo of our final
                                     prototype. We presented this final prototype
@@ -269,13 +276,31 @@ function HomeDepot(props) {
                                     evaluation and to share everything we had
                                     learnt throughout the process.
                                 </p>
-                                <iframe
-                                    width="424"
-                                    height="916"
-                                    src="//invis.io/U6PH9TJVY2T"
-                                    frameBorder="0"
-                                    allowFullScreen
-                                ></iframe>
+                                <div className="row bg-dynamic rounded py-4">
+                                    <div className="col-md d-flex justify-content-center">
+                                        <img
+                                            style={{ width: 300 }}
+                                            src={Prototype}
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className="col-md d-flex align-items-center">
+                                        <div className=" w-100 text-center">
+                                            <div className="h3 d-none d-md-block d-lg-block d-xl-block">
+                                                A Reimagined First Phone
+                                                Experience
+                                            </div>
+                                            <OutboundLink
+                                                className="btn btn-lg btn-primary mt-3"
+                                                href={prototypeLink}
+                                                rel="noreferrer"
+                                                target="_blank"
+                                            >
+                                                View Prototype
+                                            </OutboundLink>
+                                        </div>
+                                    </div>
+                                </div>
                                 <h5>Final Note</h5>
                                 <p>
                                     Overall, the Home Depot UX team was quite
