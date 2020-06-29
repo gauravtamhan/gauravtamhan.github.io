@@ -242,7 +242,7 @@ function HomeDepot(props) {
                                     trying to make our design a cohesive
                                     experience that wasn’t too complex to use.
                                 </p>
-                                <h5>Refining the Design</h5>
+                                <h5>Architecting the Information</h5>
                                 <p>
                                     Developing a clear information architecture
                                     was crucial for our design. We wanted to

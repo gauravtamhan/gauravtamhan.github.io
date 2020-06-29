@@ -1,10 +1,11 @@
 import React from 'react';
 import Layout from '../components/layout';
+import ProjectCards from '../components/projectCards';
 
-export default function About() {
+export default function About(props) {
     return (
         <Layout pageTitle="About">
-            <section>
+            <section className="pb-5">
                 <div className="container">
                     <div className="row justify-content-center text-center mb-6">
                         <div className="col-xl-8 col-lg-9 col-md-10">
@@ -22,7 +23,7 @@ export default function About() {
                     <div className="row justify-content-center mb-lg-n7">
                         <div className="col-xl-10">
                             <img
-                                src="https://negativespace.co/wp-content/uploads/2017/06/negative-space-macbook-air-coding-html-javascript-goran-ivos.jpg"
+                                src="https://learnworthy.net/wp-content/uploads/2019/10/Top-5-programming-languages-every-programmer-should-know-in-2019.jpg"
                                 alt=""
                                 className="rounded"
                             />
@@ -35,26 +36,42 @@ export default function About() {
                     <div className="row justify-content-center">
                         <div className="col-xl-10">
                             <article className="article article-portfolio">
-                                <h5>Who Am I?</h5>
+                                <h5>Summary</h5>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Duis nisi tellus, bibendum
-                                    non tortor at, molestie ultrices elit.
-                                    Aliquam a est lectus. Donec eu blandit
-                                    neque, sit amet tincidunt risus. Aenean
-                                    hendrerit non massa vitae mattis. Proin ac
-                                    quam sed tortor accumsan rhoncus interdum
-                                    vitae lacus. Nulla facilisi. Nullam at
-                                    vehicula risus. Duis arcu neque, dignissim
-                                    eu bibendum vel, suscipit pulvinar urna.
-                                    Praesent id quam pellentesque, cursus ex
-                                    sed, imperdiet mauris. Vestibulum
-                                    scelerisque eros ac elit scelerisque, in
-                                    mollis ipsum viverra.
+                                    I’m a developer at heart with a keen eye for
+                                    visual design and an obsession for making
+                                    things look good. I love collaborating with
+                                    user researchers, designers, and engineers
+                                    to develop truly amazing products.
+                                </p>
+                                <p>
+                                    My background in Computer Science and Human
+                                    Computer Interaction enables me to speak the
+                                    language of UXer’s and Engineers to bring
+                                    products from conception to realization with
+                                    as little friction as possible.
+                                </p>
+                                <p>
+                                    Through my courses, freelancing, and
+                                    full-time experiences I’ve had the
+                                    opportunity to create memorable products
+                                    that are not only enjoyable to use but are
+                                    written in code that's maintainable and easy
+                                    to understand.
                                 </p>
                             </article>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="bg-primary-alt">
+                <div className="container">
+                    <div className="row mb-4">
+                        <div className="col">
+                            <h3 className="h2">Works</h3>
+                        </div>
+                    </div>
+                    <ProjectCards uri={props.uri} />
                 </div>
             </section>
         </Layout>
