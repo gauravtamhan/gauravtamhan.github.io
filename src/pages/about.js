@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import ProjectCards from '../components/projectCards';
+import Image from '../assets/about.jpg';
 
 export default function About(props) {
     return (
@@ -22,11 +23,7 @@ export default function About(props) {
                     </div>
                     <div className="row justify-content-center mb-lg-n7">
                         <div className="col-xl-10">
-                            <img
-                                src="https://learnworthy.net/wp-content/uploads/2019/10/Top-5-programming-languages-every-programmer-should-know-in-2019.jpg"
-                                alt=""
-                                className="rounded"
-                            />
+                            <img src={Image} alt="" className="rounded" />
                         </div>
                     </div>
                 </div>
@@ -68,7 +65,7 @@ export default function About(props) {
                 <div className="container">
                     <div className="row mb-4">
                         <div className="col">
-                            <h3 className="h2">Works</h3>
+                            <h3 className="h2">Explore Works</h3>
                         </div>
                     </div>
                     <ProjectCards uri={props.uri} />

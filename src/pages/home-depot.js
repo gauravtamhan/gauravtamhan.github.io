@@ -274,7 +274,7 @@ function HomeDepot(props) {
                                     prototype. We presented this final prototype
                                     to Home Depot UX designers for a heuristic
                                     evaluation and to share everything we had
-                                    learnt throughout the process.
+                                    learned throughout the process.
                                 </p>
                                 <div className="row bg-dynamic rounded py-4">
                                     <div className="col-md d-flex justify-content-center">
