@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Layout from '../components/layout';
 import ProjectCards from '../components/projectCards';
 import ProjectDetails from '../components/projectDetails';
@@ -40,7 +41,15 @@ function HouseATL(props) {
                                 through Georgia Tech, I had the opportunity to
                                 build the public-facing web portal that
                                 organizes and visualizes data on subsidized
-                                housing in metro Atlanta for House ATL.
+                                housing in metro Atlanta for{' '}
+                                <OutboundLink
+                                    href="https://houseatl.org/"
+                                    rel="noreferrer"
+                                    target="_blank"
+                                >
+                                    House ATL
+                                </OutboundLink>
+                                .
                             </p>
                         </div>
                     </div>

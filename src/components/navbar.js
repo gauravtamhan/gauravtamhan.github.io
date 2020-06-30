@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
-import Resume from '../assets/resume/gaurav_tamhan_resume_2020_updated.pdf';
+import Resume from '../assets/resume/resume.pdf';
 
 function ResumeNavItem({ mobile }) {
     return (

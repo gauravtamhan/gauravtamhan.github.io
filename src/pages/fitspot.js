@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Layout from '../components/layout';
 import ProjectCards from '../components/projectCards';
 import ProjectDetails from '../components/projectDetails';
@@ -31,8 +32,15 @@ function Fitspot(props) {
                             <h5 className="mb-4">Frontend Development</h5>
                             <h1 className="display-4 mb-4">{pageTitle}</h1>
                             <p className="lead">
-                                In the summer of 2018 I started working at
-                                Fitspot, a fitness-focused company that promotes
+                                In the summer of 2018 I started working at&nbsp;
+                                <OutboundLink
+                                    href="https://fitspotwellness.com/"
+                                    rel="noreferrer"
+                                    target="_blank"
+                                >
+                                    Fitspot
+                                </OutboundLink>
+                                , a fitness-focused company that promotes
                                 workplace wellness through on-site and digital
                                 programs. Through this experience, I was able to
                                 work alongside senior developers to build
